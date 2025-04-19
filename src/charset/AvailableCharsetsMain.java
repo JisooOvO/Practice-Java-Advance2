@@ -4,6 +4,7 @@ import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 import java.util.Set;
 import java.util.SortedMap;
+import java.lang.*;
 
 public class AvailableCharsetsMain {
 
