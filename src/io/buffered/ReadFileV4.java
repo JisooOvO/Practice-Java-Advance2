@@ -19,7 +19,6 @@ public class ReadFileV4 {
         System.out.println("File name : " + FILE_NAME);
         System.out.println("File size : " + bytes.length / 1024 / 1024 + "MB");
         System.out.println("Time taken : " + (endTime - startTime) + "ms");
-
     }
 
 }
