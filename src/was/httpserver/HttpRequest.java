@@ -16,8 +16,8 @@ public class HttpRequest {
     private final Map<String, String> headers = new HashMap<>();
 
     public HttpRequest(BufferedReader reader) throws IOException {
-        parseRequestLine(reader);
-        parseHeaders(reader);
+        parseRequestLine(reader); // Request line
+        parseHeaders(reader); // Header
 
     }
 
@@ -26,7 +26,7 @@ public class HttpRequest {
     private void parseRequestLine(BufferedReader reader) throws IOException {
         String requestLine = reader.readLine();
 
-        if(requestLine != null) {
+        if(requestLine == null) {
             throw new IOException("EOF : No request line received");
         }
 
